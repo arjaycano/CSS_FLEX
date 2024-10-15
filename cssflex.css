@@ -1,0 +1,329 @@
+/* Basic Text Styling */
+body {
+    margin: 0;
+    background-image: url(img/bg.jpg);
+    background-attachment: fixed;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+header nav{
+    background-color: rgb(42, 37, 37);
+    padding: 15px 25px;
+    box-shadow: 0 0 5px 3px rgba( 0, 0, 0, 0.5);
+}
+header nav img{
+    width: 50px;
+    border-radius: 25%;
+}
+.brand{
+    display: inline-block;
+}
+.title{
+    display: inline-block;
+    margin: 0;
+    color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    position: relative;
+    top: -15px;
+    left: 15px; 
+}
+.links{
+    float: right;
+    position: relative;
+    top: 15px;
+}
+.link{
+    color: whitesmoke;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0 15px;
+    transition: 0.2s;
+}
+.mode{
+    margin-left: 400px;
+}
+.mode i{
+    color: whitesmoke;
+}
+.mode i:hover{
+    color:rgb(175, 133, 36);
+}
+a:hover {
+    color:rgb(175, 133, 36);
+}
+/*Product*/
+.product-h2{
+    color: aliceblue;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+.product-card {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    width: 250px;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.product-card h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke   ;
+}
+.product-card p {
+    position: absolute;
+    top: -26px;
+    left: -2px;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 25px;
+    color: white;
+    background-color: red;
+}
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.product-card button {
+    margin-top: auto;
+    padding: 10px 20px;
+    background-color: #a78328;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.product-card button:hover {
+    background-color: black;
+}
+/*Employee*/
+.employee-h2{
+    color: aliceblue;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 60px;
+}
+.employee-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.employee-card {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 200px;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.employee-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.employee-card h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.employee-card p {
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*Student*/
+.student-h2{
+    color: aliceblue;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 60px;
+}
+.student-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.student-card {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 220px;
+    padding: 20px;
+    margin: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.student-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.student-card h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.student-card p {
+    font-size: 14px;
+    color: #000000;
+    margin: 5px 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*Course*/
+.course-h2{
+    color: aliceblue;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+.courses-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.course-card {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    width: 280px;
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.course-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.course-card p {
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.course-card button {
+    background-color: #a78328;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.course-card button:hover {
+    background-color: #000000;
+}
+/*Fruit*/
+.fruit-h2{
+    color: aliceblue;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+.fruits-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.fruit-card {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 250px;
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fruit-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.fruit-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.fruit-card p {
+    font-size: 14px;
+    color: #000000;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*Footer*/
+footer{
+    background-color: rgb(42, 37, 37);
+    padding: 15px 25px;
+    text-align: center;
+}
+footer p{
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+a {
+    color: #c8ab1d;
+    text-decoration: none;
+}
